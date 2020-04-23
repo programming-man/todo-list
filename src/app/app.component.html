@@ -1,0 +1,22 @@
+<mat-grid-list cols="1" class="app-container" >
+
+  <mat-grid-list cols="1" rowHeight="10em">
+    <mat-grid-tile>
+      <h1 class="title">{{ title }}</h1>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <app-text
+        class="app-text"
+        (emitContent)="emitContent($event)">
+      </app-text>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <app-cards-container
+    class="cards-container"
+    [cardContent]="modelContent"
+    [cardColor]="modelColor">
+  </app-cards-container>
+
+</mat-grid-list>

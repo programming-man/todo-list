@@ -1,0 +1,16 @@
+<form class="text-form">
+  <mat-form-field class="text-form-field">
+    <mat-label class="text-label">Tarefa</mat-label>
+
+    <textarea
+      matInput
+      placeholder="Digite..."
+      cols="100"
+      class="textarea"
+      (change)="getContent($event)"
+      (keyup.enter)="getContent($event)">
+    </textarea>
+  </mat-form-field>
+
+  <button mat-button color="primary" class="text-btn" (click)="getContentClick($event)">Adicionar</button>
+</form>

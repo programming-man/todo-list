@@ -1,0 +1,19 @@
+.app-container {
+  height: 100%;
+}
+
+.title {
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.app-text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+}
