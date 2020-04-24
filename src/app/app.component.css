@@ -1,6 +1,7 @@
 *{
   margin: 0 auto;
   padding: 0;
+  width: 100%;
 }
 
 .title {
@@ -15,5 +16,4 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 600px;
 }

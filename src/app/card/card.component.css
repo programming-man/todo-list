@@ -1,10 +1,38 @@
+.app-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .card {
-  background-color: aqua;
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  overflow: scroll;
+  overflow-x: hidden;
+  max-height: 10vh;
+  max-width: 600px;
+  margin: 1% 0.5%;
+  background-color: #c4c4c4;
+  
+}
+
+.card > p {
+  width: 89%;
+  word-wrap: break-word;
+}
+
+.card-actions {
+  display: flex;
+  margin-left: 4%;
 }
 
 .icon-edit, .icon-delete {
   border-radius: 5px;
-  padding: 2px;
   cursor: pointer;
 }
 
@@ -17,7 +45,6 @@
 }
 
 .icon-delete {
-  margin-right: 10px;
   color: #fff;
 }
 
@@ -26,6 +53,7 @@
 }
 
 /* scrollbar */
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -44,4 +72,3 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #fff;
 }
-
