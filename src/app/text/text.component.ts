@@ -1,4 +1,5 @@
-import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { BroadcastService } from '../broadcast.service';
 
 @Component({
   selector: 'app-text',
@@ -8,24 +9,27 @@ import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 
 export class TextComponent implements OnInit {
 
-  @Output() emitContent = new EventEmitter<string> ();
-
-  contentInput: string;
-
-  constructor() { }
+  contentInput: any;
+  task:any
+  constructor(private _link: BroadcastService) { }
 
   ngOnInit(): void {
   }
 
-  getContent(event: any) {
-    event.preventDefault();
-    this.contentInput = event.target.value;
-    this.emitContent.emit(this.contentInput);
+  saveValue(event) {
+    let cont = event.target.value
+    this.contentInput = cont
+  }
+  
+  getContent(event) {
+    this._link.sendNewTodo(this.contentInput)
+    console.log('Entrou no keyUp' + this.contentInput);
+    this.task = ''
   }
 
-  getContentClick(event: any) {
-    event.preventDefault();
-    this.emitContent.emit(this.contentInput);
+  getClickContent(event) {
+    this._link.sendNewTodo(this.contentInput)
+    console.log('Entrou no click' + this.contentInput);
+    this.task = ''
   }
-
 }

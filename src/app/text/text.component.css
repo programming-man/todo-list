@@ -1,29 +1,19 @@
-.text-form {
+.main-content {
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-
-.text-form-field {
-  width: 100%;
 }
 
 .text-label {
-  font-size: 1em;
+  font-size: 1vw;
 }
-
-.textarea {
-  font-size: 1.5em;
-  height: 2em;
-  resize: none;
-  width: 100%;
+.add-todo {
+  margin-top: 5%;
 }
-
 .text-btn {
   text-transform: uppercase;
   text-align: center;
-  padding: 5px;
-  margin-left: 10px;
+  margin-left: 10%;
   width: 150px;
 }
+

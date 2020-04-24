@@ -1,16 +1,7 @@
-<form class="text-form">
-  <mat-form-field class="text-form-field">
-    <mat-label class="text-label">Tarefa</mat-label>
-
-    <textarea
-      matInput
-      placeholder="Digite..."
-      cols="100"
-      class="textarea"
-      (change)="getContent($event)"
-      (keyup.enter)="getContent($event)">
-    </textarea>
+<div class="main-content">
+  <mat-form-field class="example-full-width">
+    <mat-label>Nova Tarefa</mat-label>
+    <input matInput  class="add-todo" (change)="saveValue($event)" (keyup.enter)="getContent($event)" [(ngModel)]="task">
   </mat-form-field>
-
-  <button mat-button color="primary" class="text-btn" (click)="getContentClick($event)">Adicionar</button>
-</form>
+  <button mat-button color="primary" class="text-btn" (click)="getClickContent($event)">Adicionar</button>
+</div>

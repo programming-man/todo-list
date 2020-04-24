@@ -1,19 +1,19 @@
-.app-container {
-  height: 100%;
+*{
+  margin: 0 auto;
+  padding: 0;
 }
 
 .title {
-  font-size: 3em;
+  font-size: 3vw;
   font-weight: lighter;
+  text-align: center;
 }
-
-.app-text {
+.main-content {
+  margin-top: 10%;
+}
+.app-content {
   display: flex;
   justify-content: center;
-  width: 100%;
-}
-
-.cards-container {
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
+  max-width: 600px;
 }

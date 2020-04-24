@@ -1,10 +1,9 @@
-<mat-card class="card">
-  <mat-card-actions class="card-actions">
-    <mat-icon aria-hidden="false" aria-label=" edit icon" class="icon-edit">edit</mat-icon>
-    <mat-icon aria-hidden="false" aria-label=" delete icon" class="icon-delete">delete</mat-icon>
-  </mat-card-actions>
-
-  <mat-card-content class="card-content">
-    <p>{{ content }}</p>
-  </mat-card-content>
-</mat-card>
+<div class="app-card"*ngFor="let todo of todoList">
+  <div  class="card">
+    <p>{{ todo }}</p>
+    <!-- <mat-card-actions class="card-actions">
+      <mat-icon aria-hidden="false" aria-label=" edit icon" class="icon-edit">edit</mat-icon>
+      <mat-icon aria-hidden="false" aria-label=" delete icon" class="icon-delete">delete</mat-icon>
+    </mat-card-actions> -->
+  </div>
+</div>
