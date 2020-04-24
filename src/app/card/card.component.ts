@@ -8,26 +8,28 @@ import { BroadcastService } from '../broadcast.service';
 })
 
 export class CardComponent implements OnInit {
- 
-  constructor(private _link: BroadcastService) { }
-  
-  todoList: string[] = []
 
+  constructor(private _link: BroadcastService) { }
+
+  todoList: string[] = []
   ngOnInit(): void {
     this.adicionar()
   }
 
-  adicionar(){
+  adicionar() {
     this._link.broadcastNewTodo.subscribe((result) => {
       this.todoList.push(result)
       console.log(result)
     })
   }
 
-  deletar(event){
-    console.log(event.target.id )
-    let index = this.todoList.indexOf(event.target.id);
-    this.todoList.splice(index);
+  deletar(todo) {
+    for(let i = 0; i < this.todoList.length; i++){
+      if(todo == this.todoList[i]){
+        this.todoList.splice(i,1)
+      }
+      
+    }
   }
 
 }
