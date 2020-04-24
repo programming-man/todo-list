@@ -2,7 +2,7 @@
   <div class="card" *ngFor="let todo of todoList">
     <p>{{ todo }}</p>
     <mat-card-actions class="card-actions">
-      <mat-icon aria-hidden="false" aria-label=" edit icon" class="icon-edit">edit</mat-icon>
+      <mat-icon aria-hidden="false" aria-label=" edit icon" class="icon-edit" (click) = "edit(todo)">edit</mat-icon>
       <mat-icon aria-hidden="false" aria-label=" delete icon" class="icon-delete" (click) = "deletar(todo)">delete</mat-icon>
     </mat-card-actions>
   </div>

@@ -24,12 +24,20 @@ export class CardComponent implements OnInit {
   }
 
   deletar(todo) {
-    for(let i = 0; i < this.todoList.length; i++){
-      if(todo == this.todoList[i]){
-        this.todoList.splice(i,1)
+    for (let i = 0; i < this.todoList.length; i++) {
+      if (todo == this.todoList[i]) {
+        this.todoList.splice(i, 1)
       }
-      
+
     }
   }
 
+  edit(todo) {
+    let edit = prompt("Editando a terafa.....")
+    for (let i = 0; i < this.todoList.length; i++) {
+      if (todo == this.todoList[i]) {
+        this.todoList.splice(i, 1, edit)
+      }
+    }
+  }
 }

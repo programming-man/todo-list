@@ -1,8 +1,14 @@
 .main-content {
   padding: 0;
-  margin: 0;
+  margin: 20px auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 20vh;
+  border-radius: 10px;
+  background-color: #fff ;
+  color: #000;
 }
 
 .text-label {

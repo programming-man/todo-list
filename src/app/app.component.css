@@ -2,12 +2,15 @@
   margin: 0 auto;
   padding: 0;
   width: 100%;
+  color: #fff;
+  
 }
 
 .title {
   font-size: 3vw;
   font-weight: lighter;
   text-align: center;
+  text-shadow: 2px 2px 2px #000;
 }
 .main-content {
   /* margin-top: 10%; */

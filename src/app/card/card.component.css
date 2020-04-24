@@ -4,20 +4,21 @@
   flex-wrap: wrap;
   width: 80%;
   height: 100%;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .card {
   display: flex;
   width: auto;
   height: auto;
-  padding: 5px;
+  padding: 10px;
   overflow: scroll;
   overflow-x: hidden;
   max-height: 10vh;
   max-width: 600px;
   margin: 1% 0.5%;
-  background-color: #E5E519;
+  background-color: #000;
+  color: #fff;
   border-radius: 0% 10%;
   
 }
